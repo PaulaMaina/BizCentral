@@ -2,7 +2,58 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.sidemenu #dashboard {
+.sidemenu > .dashboard {
     background-color: #fff;
     color: #0d3e82;
+}
+
+.metrics-overview {
+    display: block;
+    margin: 50px 0 50px 150px;
+}
+
+.metrics-overview h1 {
+    margin-left: 150px;
+    font-size: 36px;
+    padding-top: 20px;
+}
+
+.metrics-overview h2 {
+    margin-left: 150px;
+    font-size: 30px;
+    color: #0d3e82;
+}
+
+.metrics {
+    margin-left: 150px;
+    display: flex;
+}
+
+.metric {
+    display: block;
+    background-color: #fff;
+    width: 220px;
+    height: auto;
+    padding: 20px 30px 20px 50px;
+    margin-right: 40px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    line-height: 0.03cm;
+}
+
+.metric h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 300px;
+}
+
+.metric p {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0d3e82;
+}
+
+.charts {
+    width: 100%;
 }
