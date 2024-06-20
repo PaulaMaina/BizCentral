@@ -6,10 +6,10 @@ body {
 }
 
 .container {
-    width: 50%;
+    width: 40%;
     height: 400px;
     margin-top: 140px;
-    margin-left: 350px;
+    margin-left: 500px;
     padding-top: 30px;
     text-align: center;
     border-radius: 20px;
@@ -33,7 +33,7 @@ body {
     padding: 0%;
     margin: 0%;
     font-size: 14px;
-    margin-left: 170px;
+    margin-left: 150px;
 }
 
 .signup-form input{
@@ -42,7 +42,7 @@ body {
     display: block;
     padding: 20px;
     margin-bottom: 5px;
-    margin-left: 170px;
+    margin-left: 150px;
     width: 350px;
     height: 0px;
     color: #000;
@@ -64,17 +64,14 @@ body {
     margin-top: 10px;
 }
 
-p.signin-redirect {
-    font-size: 8px;
-}
-
 .signin-link {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 5px;
+    padding-top: 5px;
 }
 
 span a{
     color: #0d3e82;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
 }
