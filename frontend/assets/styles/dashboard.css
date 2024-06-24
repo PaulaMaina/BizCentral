@@ -2,26 +2,55 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.sidemenu > .dashboard {
+.container {
+    display: flex;
+    background-color: rgba(13, 62, 130, .1);
+    position: relative;
+    height: 100%;
+    width: 110%;
+}
+
+.selected {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+    height: 20px;
+    margin-left: -40px;
+    border-radius: 5px;
     background-color: #fff;
+}
+
+.selected a {
+    text-decoration: none;
     color: #0d3e82;
 }
 
-.metrics-overview {
-    display: block;
-    margin: 50px 0 50px 150px;
+.selected img {
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+}
+.selected li {
+    text-align: center;
+    padding-top: 5px;
+    font-weight: 800;
 }
 
-.metrics-overview h1 {
+.overview {
+    display: block;
+    margin: 0px 0 50px 150px;
+}
+
+.overview h1 {
     margin-left: 150px;
     font-size: 36px;
     padding-top: 20px;
 }
 
-.metrics-overview h2 {
+.overview h2 {
     margin-left: 150px;
     font-size: 30px;
-    color: #0d3e82;
+    color: #000;
 }
 
 .metrics {
@@ -54,6 +83,22 @@
     color: #0d3e82;
 }
 
-.charts {
+.reports {
     width: 100%;
+    margin-left: 30%;
+}
+
+.chart {
+    background-color: #fff;
+    height: 400px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+}
+
+.chart h3 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+    color: #0d3e82;
 }

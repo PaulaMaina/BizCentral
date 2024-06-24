@@ -13,7 +13,7 @@
     padding-top: 20px;
     margin: -8px auto 0 0;
     left: -20px;
-    position: fixed;
+    position: relative;
 }
 
 #logo img{
@@ -21,7 +21,7 @@
     width: 130px;
     height: 130px;
     margin-top: -45px;
-    margin-left: -200px;
+    margin-left: -150px;
 }
 
 .search input{
@@ -63,22 +63,14 @@
     display: inline-block;
 }
 
-.container {
-    display: flex;
-    background-color: rgba(13, 62, 130, .1);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
 .sidenav {
     height: 100%;
     background-color: #0d3e82;
     background-size: cover;
     color: #fff;
     width: 250px;
-    position: fixed;
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -40px;
     margin-left: -8px;
 }
 
