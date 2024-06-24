@@ -2,3 +2,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.product-photo input{
+    border: none;
+    align-items: end;
+}

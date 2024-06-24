@@ -1,69 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BizCentral</title>
-    <link rel="stylesheet" href="assets/styles/common.css">
-    <link rel="stylesheet" href="assets/styles/inventory.css">
-    <link rel="shortcut icon" href="assets/images/abstract-logo.png">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <header>
-        <div class="topbar">
-            <div id="logo">
-               <img src="./assets/images/dashboard-logo.png" alt="BizCentral Logo">
-            </div>
-            <div class="search">
-                <form action="">
-                    <input type="text" placeholder="Search" name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-            <div class="profile">
-                <img src="./assets/images/default-profile.jpg" alt="User Profile">
-            </div>
-        </div>        
-    </header>
-    <section>
-        <div class="container">
-            <div class="sidenav">
-                <ul>
-                    <div class="sidemenu">
-                        <img src="./assets/images/dashboard-icon.png" alt="Dashboard Icon">
-                        <a href="dashboard.html"><li>Dashboard</li></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BizCentral</title>
+        <link rel="stylesheet" href="assets/styles/common.css">
+        <link rel="stylesheet" href="assets/styles/inventory.css">
+        <link rel="shortcut icon" href="assets/images/abstract-logo.png">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="topbar">
+                <div id="logo">
+                <img src="./assets/images/dashboard-logo.png" alt="BizCentral Logo">
+                </div>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="Search" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="profile">
+                    <img src="./assets/images/default-profile.jpg" alt="User Profile">
+                </div>
+            </div>        
+        </header>
+        <section>
+            <div class="container">
+                <div class="sidenav">
+                    <ul>
+                        <div class="sidemenu">
+                            <img src="./assets/images/dashboard-icon.png" alt="Dashboard Icon">
+                            <a href="dashboard.html"><li>Dashboard</li></a>
+                        </div>
+                        <div class="sidemenu">
+                            <img src="./assets/images/business-icon.png" alt="Business Icon">
+                            <a href="business.html"><li>Businesses</li></a>
+                        </div>
+                        <div class="sidemenu">
+                            <img src="./assets/images/department-icon.png" alt="Department Icon">
+                            <a href="department.html"><li>Departments</li></a>
+                        </div>
+                        <div class="selected">
+                            <img src="./assets/images/icons8-new-product-24.png" alt="Inventory Icon">
+                            <a href="inventory.html"><li>Inventory</li></a>
+                        </div>
+                        <div class="sidemenu">
+                            <img src="./assets/images/transaction-icon.png" alt="Inventory Icon">
+                            <a href="transactions.html"><li>Invoices</li></a>
+                        </div>
+                        <div class="sidemenu">
+                            <img src="./assets/images/staff-icon.png" alt="People Icon">
+                            <a href="staff.html"><li>Staff</li></a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="overview">
+                    <h1>Inventory</h1>
+                    <div class="add-new">
+                        <button type="submit"><i class="fa fa-plus"></i></button>
                     </div>
-                    <div class="sidemenu">
-                        <img src="./assets/images/business-icon.png" alt="Business Icon">
-                        <a href="business.html"><li>Businesses</li></a>
-                    </div>
-                    <div class="sidemenu">
-                        <img src="./assets/images/department-icon.png" alt="Department Icon">
-                        <a href="department.html"><li>Departments</li></a>
-                    </div>
-                    <div class="selected">
-                        <img src="./assets/images/icons8-new-product-24.png" alt="Inventory Icon">
-                        <a href="inventory.html"><li>Inventory</li></a>
-                    </div>
-                    <div class="sidemenu">
-                        <img src="./assets/images/transaction-icon.png" alt="Inventory Icon">
-                        <a href="transactions.html"><li>Invoices</li></a>
-                    </div>
-                    <div class="sidemenu">
-                        <img src="./assets/images/staff-icon.png" alt="People Icon">
-                        <a href="staff.html"><li>Staff</li></a>
-                    </div>
-                </ul>
-            </div>
-            <div class="overview">
-                <h1>Inventory</h1>
-                <div class="add-new">
-                    <button type="submit"><i class="fa fa-plus"></i></button>
+                    <div class="pop-overlay" id="popOverlay">
+                        <div class="popup" id="popup">
+                            <span class="close" id="closePopup">&times;</span>
+                            <div class="content">
+                                <h2>Register a new product/service!</h2>
+                                <p>Fill in the information below:</p>
+                                <form action="">
+                                    <p class="input-fields">Product/Service Name*</p>
+                                    <input type="text" name="prodName" required>
+                                    <p class="input-fields">Department Name*</p>
+                                    <input type="text" name="depName" required>
+                                    <p class="input-fields">Category*</p>
+                                    <input type="text" name="prdCategory" required>
+                                    <p class="input-fields">Unit Cost*</p>
+                                    <input type="number" name="unitCost" required>
+                                    <p class="input-fields">Unit Available</p>
+                                    <input type="number" name="unitsAvailable" required>
+                                    <p class="input-fields">Product/service photo</p>
+                                    <div class="product-photo">
+                                        <input type="file" name="prodPhoto" required>
+                                    </div>
+                                    <button type="submit" onclick="bizRegistered()">Create New Listing</button>
+                                </form>
+                            </div>
+                        </div>
                 </div>
             </div>
-        </div>
-    </section>
-</body>
+        </section>
+        <script src="scripts/script.js"></script>
+    </body>
 </html>
