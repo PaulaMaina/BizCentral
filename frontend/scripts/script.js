@@ -1,13 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     const popOverlay = document.getElementById('popOverlay');
-    //const popup = document.getElementById('popup');
     const closePopup = document.getElementById('closePopup');
 
     function openPopup () {
         popOverlay.style.display = 'block';
     }
 
-    function closePopup () {
+    function closePopupFunc () {
         popOverlay.style.display = 'none';
     }
 
@@ -16,13 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
         closePopup();
     }
 
-    openPopup();
+    document.querySelector('.add-new button').addEventListener('click', openPopup);
 
-    closePopup.addEventListener('click', closePopup);
+    closePopup.addEventListener('click', closePopupFunc);
 
     popOverlay.addEventListener('click', function(event) {
         if(event.target === popOverlay) {
-            closePopup();
+            closePopupFunc();
         }
     });
 });

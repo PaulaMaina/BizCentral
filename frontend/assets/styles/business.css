@@ -18,9 +18,9 @@
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    top: 50%;
-    left: 50%;
-    margin-left: 150px;
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 50%;
 }
 
 .content {
@@ -30,23 +30,25 @@
 
 .popup .close {
     position: absolute;
-    font-size: 20px;
-    top: 10px;
-    right: 10px;
+    font-size: 40px;
     color: #0d3e82;
     cursor: pointer;
+    right: 25%;
 }
 
 .popup .input-fields {
     margin-bottom: 0;
+    text-align: justify;
+    padding-left: 120px;
 }
 
 .popup input {
-    width: 80%;
+    width: 70%;
     border: 1px solid #000;
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
+    font-size: 18px;
 }
 
 .popup button {
@@ -59,4 +61,6 @@
     font-size: 20px;
     cursor: pointer;
     width: 50%;
+    margin-left: 25%;
+    margin-bottom: 40px;
 }
