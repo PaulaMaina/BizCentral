@@ -72,15 +72,21 @@
         </div>
     </section>
     <section class="container">
+        <h2>Contact Us</h2>
         <div class="contact">
-            <h2>Contact Us</h2>
+            <h4>Reach out to us by sending an email through the form below!</h4>
             <form action="">
                 <p class="input-fields">Full Name*</p>
                 <input type="text" name="fullName" required>
                 <p class="input-fields">Email Address*</p>
                 <input type="email" name="email" required>
-                <input type="text" name="subject" required placeholder="subject">
-                <input type="description" name="message" placeholder="Please write your message here...">
+                <div class="contact-msg">
+                    <p class="input-fields">Subject</p>
+                    <input type="text" name="subject" required>
+                    <p class="input-fields">Please write your message below...</p>
+                    <input class="description" type="text" name="message">
+                </div>
+                
             </form>
         </div>
     </section>

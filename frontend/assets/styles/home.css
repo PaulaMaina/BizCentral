@@ -123,3 +123,31 @@ li.cta {
     padding-left: 20px;
     text-align: center;
 }
+.contact {
+    margin-left: 200px;
+}
+
+.contact-msg .input-fields {
+    margin-bottom: -20px;
+}
+
+.contact input {
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.contact-msg input {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.contact-msg .description {
+    height: 100px;
+}
