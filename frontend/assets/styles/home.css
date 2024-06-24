@@ -1,52 +1,125 @@
-body {
-    width: 100%;
-    height: 100%;
+* {
     font-family: "Poppins", sans-serif;
 }
 
 header {
     display: flex;
     margin-top: 10px;
+    height: 100px;
 }
 
 .navbar {
-    display: inline-block;
+    display: flex;
     text-align: left;
     margin-right: 50px;
+    width: 100%;
 }
 
 #logo img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background: url("./images/main-logo.png") no-repeat;
-    margin-right: 650px;
+    margin: -30px 300px 10px 50px;
     float: left;
 }
 
 .navbar li{
     display: inline-block;
     padding-left: 50px;
+    padding-right: 30px;
     padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+li.cta {
+    margin-left: 100px;
+}
+
+ li.button {
+    background-color: #0d3e82;
+    color: #fff;
+    padding: 10px 70px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .hero-section {
     display: flex;
     margin-bottom: 30px;
     width: 100%;
+    height: 400px;
     padding-left: 100px;
-    margin-right: 50px;
+    margin: 30px 50px 30px 50px;
 }
-
 
 .hero-text {
     text-align: left;
     margin-left: 30px;
-    top: 50%;
+    margin-right: 200px;
+    margin-top: 70px;
     color: #0d3e82;
+}
+
+.hero-text button {
+    background-color: #0d3e82;
+    width: 350px;
+    height: 50px;
+    color: #fff;
+    padding: 10px 70px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .hero-image {
     height: 300px;
     float: right;
     margin-left: 100px;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 200px;
+    row-gap: 50px;
+}
+
+.card {
+    width: 300px;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card .feature-title {
+    font-size: 24px;
+    font-weight:bolder;
+    color: #0d3e82;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.card .feature-description {
+    padding-left: 20px;
+    text-align: center;
 }
