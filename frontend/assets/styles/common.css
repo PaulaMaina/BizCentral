@@ -31,27 +31,27 @@
     border-radius: 20px;
     background-color: rgb(255, 255, 255, .5);
     color: #fff;
+    padding-left: 30px;
+    font-size: 16px;
 }
 
 .search ::placeholder {
     color: #fff;
     font-size: 16px;
     text-align: left;
-    padding-left: 30px;
 }
 
 .search button {
     float: right;
     width: 40px;
     height: 40px;
-    margin-left: -20px;
     background: none;
     color: #fff;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    margin-left: -60px;
     padding-right: 20px;
+    font-size: 30px;
 }
 
 .profile img {
@@ -183,4 +183,5 @@
     display: block !important;
     z-index: 99999;
     font-size: 45px;
+    cursor: pointer;
 }

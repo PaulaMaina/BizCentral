@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="assets/images/abstract-logo.png">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
     <header>
@@ -69,7 +70,27 @@
                     </tr>
                 </table>
                 <div class="add-new">
-                    <button type="submit"><i class="fa fa-plus"></i></button>
+                    <button type="submit" onclick="openPopup()"><i class="fa fa-plus"></i></button>
+                </div>
+                <div class="pop-overlay" id="popOverlay">
+                    <div class="popup" id="popup">
+                        <span class="close" id="closePopup">&times;</span>
+                        <div class="content">
+                            <h2>Register your business today!</h2>
+                            <p>Fill in the information below:</p>
+                            <form action="">
+                                <p class="input-fields">Business Name*</p>
+                                <input type="text" name="bizname" required>
+                                <p class="input-fields">Business Address*</p>
+                                <input type="text" name="bizaddress" required>
+                                <p class="input-fields">Business Tel. Number*</p>
+                                <input type="number" name="biztelnumber" required>
+                                <p class="input-fields">Business Category</p>
+                                <input type="text" name="bizcategory" required>
+                                <button type="submit" onclick="bizRegistered()">Register</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
