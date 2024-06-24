@@ -2,3 +2,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.username {
+    display: flex;
+    margin-left: 115px;
+}
+
+.username .input-fields {
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+}
+
+.username .firstname input,
+.username .lastname input {
+    width: 85%;
+    margin-right: 70px;
+}

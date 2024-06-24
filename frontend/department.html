@@ -70,8 +70,27 @@
                 <div class="add-new">
                     <button type="submit"><i class="fa fa-plus"></i></button>
                 </div>
+                <div class="pop-overlay" id="popOverlay">
+                    <div class="popup" id="popup">
+                        <span class="close" id="closePopup">&times;</span>
+                        <div class="content">
+                            <h2>Create a new department today!</h2>
+                            <p>Fill in the information below:</p>
+                            <form action="">
+                                <p class="input-fields">Department Name*</p>
+                                <input type="text" name="depName" required>
+                                <p class="input-fields">Business Name*</p>
+                                <input type="text" name="bizName" required>
+                                <p class="input-fields">Department Manager</p>
+                                <input type="text" name="bizcategory" required>
+                                <button type="submit" onclick="bizRegistered()">Create Department</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
