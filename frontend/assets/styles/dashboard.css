@@ -10,6 +10,10 @@
     width: 110%;
 }
 
+.sidenav {
+    margin-top: -12px;
+}
+
 .selected {
     display: flex;
     padding: 20px;
