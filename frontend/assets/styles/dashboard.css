@@ -48,7 +48,6 @@
 .overview h1 {
     margin-left: 150px;
     font-size: 36px;
-    padding-top: 20px;
 }
 
 .overview h2 {
@@ -89,13 +88,13 @@
 
 .reports {
     width: 100%;
-    margin-left: 30%;
+    margin-left: 150px;
 }
 
 .chart {
     background-color: #fff;
-    height: 400px;
-    width: 50%;
+    height: 350px;
+    width: 90%;
     border: none;
     border-radius: 10px;
 }
