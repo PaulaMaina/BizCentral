@@ -31,8 +31,10 @@ header {
     font-size: 18px;
     font-weight: 500;
 }
-li.cta {
+li.cta a {
     margin-left: 100px;
+    color: #000;
+    text-decoration: none;
 }
 
  li.button {
@@ -43,6 +45,11 @@ li.cta {
     border-radius: 20px;
     font-size: 18px;
     font-weight: 700;
+}
+
+li.button a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .hero-section {
